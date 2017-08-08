@@ -1,0 +1,22 @@
+[
+    {
+    	"repoName":"test.shareok.org",
+    	"userName":"test.shareok-fake@gmail.com",
+    	"password":"fake123456**"
+    },
+    {
+    	"repoName":"test-commons.shareok.org",
+    	"userName":"test-commons-fake@gmail.com",
+    	"password":"fake123456**"
+    },
+    {
+    	"repoName":"commons.shareok.org",
+    	"userName":"commons.shareok-fake@gmail.com",
+    	"password":"fake123456**"
+    },
+    {
+        "repoName":"plos",
+        "userName":"9Rp43FrrxATcMx_HhznP",
+        "password":"API KEY FOR PLOS JOURNALS"
+    }
+]

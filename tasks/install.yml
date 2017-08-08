@@ -1,0 +1,19 @@
+---
+
+- name: chown and chmod librepotools-data to celery-workerq
+  file:
+    path: /var/local/librepotools/librepotools-data
+    owner: celery-workerq
+    group: celery-workerq
+    mode: 0755
+    recurse: yes
+
+- name: Download Repotools War file
+  get_url: https://github.com/OULibraries/LibRepoTools/releases/download/v1.0.1/kernel-api-1.0.1-SNAPSHOT-jar-with-dependencies.jar
+  dest: /var/local/librepotools/kernel-api-current.jar
+  owner: celery-workerq
+  group: celery-workerq
+  mode: 0700
+  environment:
+    LIBREPOTOOLS_JAR_FILE: /var/local/librepotools/kernel-api-current.jar
+    LIBREPOTOOLS_ROOT_PATH: /var/local/librepotools/librepotools-data
