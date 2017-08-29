@@ -20,3 +20,11 @@
     owner: celery-workerq
     group: celery-workerq
     mode: 0700
+
+- name: Download Sage Journal Issue Date file
+  get_url: 
+    url: https://github.com/OULibraries/LibRepoTools/releases/download/v1.0.2/sageJournalIssueDateInfo.json
+    dest: /var/local/librepotools/librepotools-data/sageJournalIssueDateInfo.json
+    owner: celery-workerq
+    group: celery-workerq
+    mode: 0700
