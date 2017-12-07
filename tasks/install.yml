@@ -15,7 +15,7 @@
 
 - name: Download Repotools War file
   get_url: 
-    url: https://github.com/OULibraries/LibRepoTools/releases/download/v1.0.1/kernel-api-1.0.1-SNAPSHOT-jar-with-dependencies.jar
+    url: https://github.com/OULibraries/LibRepoTools/releases/download/v{{REPOTOOLS_VERSION}}/kernel-api-{{REPOTOOLS_VERSION}}-SNAPSHOT-jar-with-dependencies.jar
     dest: /var/local/librepotools/kernel-api-current.jar
     owner: celery-workerq
     group: celery-workerq
@@ -23,7 +23,7 @@
 
 - name: Download Sage Journal Issue Date file
   get_url: 
-    url: https://github.com/OULibraries/LibRepoTools/releases/download/v1.0.2/sageJournalIssueDateInfo.json
+    url: https://github.com/OULibraries/LibRepoTools/releases/download/v{{REPTOOLS_VERSION}}/sageJournalIssueDateInfo.json
     dest: /var/local/librepotools/librepotools-data/sageJournalIssueDateInfo.json
     owner: celery-workerq
     group: celery-workerq
